@@ -45,7 +45,7 @@
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Crud Afriansyah</span>
+      <span class="brand-text font-weight-light">Belajar Php Rian</span>
     </a>
 
     <!-- Sidebar -->
@@ -132,6 +132,9 @@
              break;
              case "home";
              include ("views/dashboard.php");
+             break;
+             case "tambah_pengguna";
+             include ("views/form_pengguna.php");
              break;
 
              }
