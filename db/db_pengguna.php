@@ -8,8 +8,8 @@ if($proses=='insert'){
    $password= md5($_POST['password']);
    $level=$_POST['level'];
 
-   mysqli_query($koneksi,"INSERT INTO pengguna SET nama='$nama',
-   username='$username',password='$password',level='$level'");
+   mysqli_query($koneksi,"INSERT INTO pengguna SET nama='$nama', username='$username',password='$password',level='$level'");
+   
 }else if($proses=='update'){
     $nama=$_POST['nama'];
     $username=$_POST['username'];
