@@ -1,7 +1,7 @@
  <!-- Default box -->
  <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Dashboard</h3>
+          <h3 class="card-title">dashboard</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -11,12 +11,12 @@
           </div>
         </div>
         <div class="card-body">
-          Dashboard
+         dashboard
         </div>
         <!-- /.card-body -->
-        <!--<div class="card-footer">
+        <!-- <div class="card-footer">
           Footer
-        </div>-->
+        </div> -->
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
