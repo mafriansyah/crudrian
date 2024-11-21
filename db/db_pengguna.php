@@ -1,7 +1,10 @@
 <?php
 $proses=$_GET['proses'];
 include "../koneksi.php";
-
+session_start();
+include "../library/lib_login.php";
+if (cek_login()){
+ 
 if($proses=='insert'){
    $nama=$_POST['nama'];
    $username=$_POST['username'];
@@ -9,7 +12,7 @@ if($proses=='insert'){
    $level=$_POST['level'];
 
    mysqli_query($koneksi,"INSERT INTO pengguna SET nama='$nama', username='$username',password='$password',level='$level'");
-   
+
 }else if($proses=='update'){
     $nama=$_POST['nama'];
     $username=$_POST['username'];
@@ -24,3 +27,6 @@ if($proses=='insert'){
 }
 
 header("location:../index.php?halaman=pengguna");
+}else{
+   header("location:../login.php");
+}

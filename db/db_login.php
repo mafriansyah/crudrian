@@ -11,7 +11,7 @@ $data=mysqli_fetch_array($sql);
 if($jumlah_pengguna>0){
     $_SESSION['username']=$data['username'];
     $_SESSION['nama']=$data['nama'];
-    $_SESSION['idpengguna']=$data['idpengguna'];
+    $_SESSION['idpengguna']=$data['id'];
     $_SESSION['level']=$data['level'];
 
     $_SESSION['status_login']=true;
@@ -23,5 +23,5 @@ if($jumlah_pengguna>0){
     window.location='../login.php';
     </script>
     ";
-
+    
 }

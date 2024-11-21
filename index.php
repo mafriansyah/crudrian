@@ -1,3 +1,10 @@
+<?php
+session_start();
+include "library/lib_login.php";
+if (!cek_login()){
+    header("location:login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,9 +44,16 @@
         <a href="#" class="nav-link">Contact</a>
       </li> -->
       </ul>
-
-
-    </nav>
+      </nav>
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav ml-auto">
+        
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="logout.php" class="nav-link"><i class="fa fa-power-off"></i>Log Out</a>
+          </li>
+          
+          
+        </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
